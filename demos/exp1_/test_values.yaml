@@ -1,0 +1,48 @@
+# Endeffector
+endeffector:  
+  a_val: 0.1
+  b_val: 0.1
+  c_val: 0.25
+  eps1_val: 1.0
+  eps2_val: 1.0
+
+# Obstacles
+obstacle_1:
+  a_val: 0.1
+  b_val: 0.5
+  c_val: 0.1
+  eps1_val: 0.1
+  eps2_val: 0.1
+  x_val: 0.5
+  y_val: 0.0
+  z_val: -0.35
+  qw_val: 1.0
+  qx_val: 0.0
+  qy_val: 0.0
+  qz_val: 0.0
+  # lambda_FT: [1.0, 0.0] # TRANSLATION
+  # lambda_FT: [0.0, 20.0] # ROTATION
+  lambda_FT: [2.0, 60.0] # TRANSLATION + ROTATION
+  beta_val: 2.0
+  eta_val: 2.0
+  
+# CDMPs Parameters
+cdmp:
+  alpha_s:      7.0
+  k_gain:     600.0
+  rbfs_pSec:    4.0
+  tau_scaler:   1.0
+  max_steps: 5000.0
+  tolerance:    0.001
+  
+# Animation Parameters
+animation:
+  sample_interval: 20 # selects every sample_interval's frame
+  time_scaler: 1.0 # animation speed relative to realtime
+  view_angles: [5.0, -95.0, 0.0]
+  xlim3d: [0.0, 1.0]
+  ylim3d: [-0.5, 0.5]
+  zlim3d: [-0.5, 0.5]
+  save: null # null if you don't want to save. 1 otherwise
+  plot: 1 # null if you don't want to plot. 1 otherwise
+
